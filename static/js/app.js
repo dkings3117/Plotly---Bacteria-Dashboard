@@ -99,7 +99,8 @@ function buildCharts(sample) {
       labels: data.map(row => row.otu_id),
       values: data.map(row => row.sample_value),
       text: data.map(row => row.otu_label),
-      hoverinfo: "label+percent+text",
+      hoverinfo: 'label+percent+text',
+      textinfo: 'percent',
       type: 'pie'
     };
 
